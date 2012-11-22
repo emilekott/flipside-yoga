@@ -1,0 +1,102 @@
+overrideGlobal:
+	label: Use these settings
+	type: checkbox
+	default:
+		'yes':
+			label: 'Yes'
+
+"Header Options": section
+##########################
+
+headerBgColor:
+	label: Background Color
+	type: colorpicker
+	default: '#FFFFFF'
+	themebox: { label: Header Background, page: all }
+headerBg:
+	label: Background Image
+	type: image-url
+	themebox: {
+		title: Header Background,
+		page: all,
+		{title: Floral, img: design/img/patterns/floral.png, repeat: repeat, x: left, y: top, attach: scroll}
+		{title: Sand, img: design/img/patterns/sand.png, repeat: repeat, x: left, y: top, attach: scroll}
+		{title: Wood, img: design/img/patterns/wood.png, repeat: repeat, x: left, y: top, attach: scroll}
+	}
+headerBgY:
+	label: Vertical Position
+	type: select
+	default: {
+		top: {
+			label: Top
+			checked: true
+		},
+		center: {
+			label: Center
+		},
+		bottom: {
+			label: Bottom
+		}
+	}
+headerBgX:
+	label: Horizontal Position
+	type: select
+	default: {
+		left: {
+			label: Left
+			checked: true
+		},
+		center: {
+			label: Center
+		},
+		right: {
+			label: Right
+		}
+	}
+headerBgRepeat:
+	label: Repeat
+	type: select
+	default: {
+		no-repeat: {
+			label: No Repeat
+		},
+		repeat: {
+			label: Repeat
+			checked: true
+		},
+		repeat-x: {
+			label: Repeat X
+		},
+		repeat-y: {
+			label: Repeat Y
+		}
+	}
+"Slider Options": section
+##########################
+sliderEnable:
+	label: Enable slider
+	type: select
+	default: {
+		'yes': {
+			label: 'Yes'
+			checked: true
+		},
+		'no': {
+			label: 'No'
+		}
+	}	
+sliderType:
+	label: Slider type
+	type: dropdown-sliders
+	default: anything
+sliderAliases:
+	label: Slider aliases
+	type: dropdown-slider-aliases
+sliderAlternative:
+	label: Slider alternative
+	type: image-url
+	default: ''
+sliderCategory:
+	label: Show Slider Category
+	type: dropdown-categories
+	default: slider-creator

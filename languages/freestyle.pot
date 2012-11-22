@@ -1,0 +1,160 @@
+# Copyright (C) 2012 AitThemes.com 
+# This file is distributed under the same license as the AIT Freestyle WordPress Theme.
+msgid ""
+msgstr ""
+"Project-Id-Version: Freestyle 2.1\n"
+"Report-Msgid-Bugs-To: http://support.ait-themes.com/categories/wp-freestyle\n"
+"POT-Creation-Date: 2012-11-07T00:05:24+01:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \Templates\general-content-nav.php:2
+msgid "%s Newer posts"
+msgstr ""
+
+#: \Templates\general-content-nav.php:3
+msgid "Older posts %s"
+msgstr ""
+
+#: \Templates\general-search-form.php:3
+msgid "search..."
+msgstr ""
+
+#: \Templates\general-search-form.php:4
+msgid "Search"
+msgstr ""
+
+#: \Templates\main-404.php:15
+msgid "This is somewhat embarrassing, isn't it?"
+msgstr ""
+
+#: \Templates\main-404.php:17
+msgid "It seems we can't find what you are looking for. Perhaps searching, or one of the links below, can help."
+msgstr ""
+
+#: \Templates\main-archive.php:15
+msgid "Daily Archives:"
+msgstr ""
+
+#: \Templates\main-archive.php:17
+msgid "Monthly Archives:"
+msgstr ""
+
+#: \Templates\main-archive.php:19
+msgid "Yearly Archives:"
+msgstr ""
+
+#: \Templates\main-archive.php:21
+msgid "Blog Archives"
+msgstr ""
+
+#: \Templates\main-archive.php:36
+#: \Templates\main-category.php:32
+#: \Templates\main-index.php:33
+#: \Templates\main-search.php:36
+#: \Templates\main-tag.php:32
+msgid "Nothing Found"
+msgstr ""
+
+#: \Templates\main-archive.php:40
+#: \Templates\main-index.php:37
+#: \Templates\main-search.php:40
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: \Templates\main-category.php:14
+msgid "Category Archives:"
+msgstr ""
+
+#: \Templates\main-category.php:36
+#: \Templates\main-tag.php:36
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post"
+msgstr ""
+
+#: \Templates\main-search.php:16
+msgid "Search Results for:"
+msgstr ""
+
+#: \Templates\main-single.php:35
+#: \Templates\snippet-content-loop.php:70
+#: \Templates\snippet-posted-by.php:1
+msgid "View all posts by"
+msgstr ""
+
+#: \Templates\main-single.php:38
+#: \Templates\snippet-content-loop.php:73
+msgid "Categories:"
+msgstr ""
+
+#: \Templates\main-single.php:44
+msgid "Tagged:"
+msgstr ""
+
+#: \Templates\main-tag.php:14
+msgid "Tag Archives:"
+msgstr ""
+
+#: \Templates\snippet-comments-link.php:7
+msgid "Leave a reply"
+msgstr ""
+
+#: \Templates\snippet-comments-link.php:13
+msgctxt "one reply"
+msgid "Reply"
+msgstr ""
+
+#: \Templates\snippet-comments-link.php:15
+msgctxt "more replies"
+msgid "Replies"
+msgstr ""
+
+#: \Templates\snippet-comments.php:7
+msgid "One thought on"
+msgstr ""
+
+#: \Templates\snippet-comments.php:8
+msgid "thoughts on"
+msgstr ""
+
+#: \Templates\snippet-comments.php:19
+msgid "Pingback"
+msgstr ""
+
+#: \Templates\snippet-comments.php:49
+msgid "Reply <span>&darr;</span>"
+msgstr ""
+
+#: \Templates\snippet-comments.php:57
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: \Templates\snippet-comments.php:74
+msgid "Comments are closed."
+msgstr ""
+
+#: \Templates\snippet-comments.php:81
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: \Templates\snippet-content-loop.php:55
+#: \Templates\snippet-content-loop.php:65
+msgctxt "share button"
+msgid "share"
+msgstr ""
+
+#: \Templates\snippet-content-loop.php:70
+msgid "Posted:"
+msgstr ""
+
+#: \Templates\snippet-post-nav.php:1
+msgid "%s Previous"
+msgstr ""
+
+#: \Templates\snippet-post-nav.php:2
+msgid "Next %s"
+msgstr ""

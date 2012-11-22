@@ -1,0 +1,12 @@
+overrideGlobal:
+	label: Use this order
+	type: checkbox
+	default:
+		'yes':
+			label: 'Yes'
+order:
+	type: order
+	default:
+		sectionA: Section A - Content
+		sectionB: Section B - Testimonials
+		sectionC: Section C - Products

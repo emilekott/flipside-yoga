@@ -1,0 +1,79 @@
+/*Sliding Text and Icon Menu Style*/
+.sti-menu{
+	width: auto;
+	position:relative;
+	margin: 0 auto 1px auto;
+	list-style: none;
+	/*display: none; */
+}
+.sti-menu li{
+	float:left;
+	width:201px;
+	height:260px;
+	border-right: 1px solid #ddd;
+}
+
+.sti-menu li a{
+	display:block;
+	overflow:hidden;
+	background:url('../img/icon-menu-shd.png') no-repeat top left #fff;
+	text-align:center;
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.sti-menu li:first-child a { background:#fff;
+}
+.sti-menu li:last-child  { border-right-width: 0px;
+}
+
+.sti-menu li a h2{
+	font-family: Arial, sans-serif;
+	color:@linksFontColor;
+	font-size:20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	position:absolute;
+	padding:10px;
+	width:180px;
+	top:150px;
+	left:0px;
+	
+}
+.sti-menu li a h3{
+	font-family: Arial, sans-serif;
+	font-size:12px;
+	position:absolute;
+	line-height:20px;
+	top:180px;
+	left:0px;
+	width:180px;
+	padding:10px 10px 0;
+	font-weight:normal;
+}
+.sti-icon{
+	width:100px;
+	height:100px;
+	position:absolute;
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	left:0;
+	top:30px;
+	padding: 0 10px
+}
+.sti-icon-care{
+	background-image:url(../images/care.png);
+}
+.sti-icon-alternative{
+	background-image:url(../images/alternative.png);
+}
+.sti-icon-family{
+	background-image:url(../images/family.png);
+}
+.sti-icon-info{
+	background-image:url(../images/info.png);
+}
+.sti-icon-technology{
+	background-image:url(../images/technology.png);
+}

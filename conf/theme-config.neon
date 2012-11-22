@@ -1,0 +1,575 @@
+generalOptions:
+	title: General Settings
+	menu-title: General Settings
+	tabs:
+		general:
+			title:     General Setting
+			tab-title: General
+			options:
+				ThemeBox: section
+				#################
+				displayThemebox:
+					label: Show Themebox
+					type: checkbox
+					default:
+						enable:
+							label: 'Yes'
+							checked: true
+				Top-Header: section
+				#################
+				logo_img:
+					label: Logo image
+					type: image-url
+					default: 'design/img/logo.png'
+					skinable: false
+				tagline:
+					label: Tagline
+					type: text
+					default: The best responsive wordpress premium template you've ever seen...
+				phoneNumber:
+					label: Phone number
+					type: text
+				Main Menu: section
+				#################
+				mainmenu_dropdown_time:
+					label: "Dropdown Animation Time (ms)"
+					type: text
+					default: 200
+				mainmenu_dropdown_animation:
+					label: "Dropdown Animation Easing"
+					type: select
+					default: {
+						swing: {
+							label: Default
+							checked: true
+						},
+						easeOutBounce: {
+							label: easeOutBounce
+						},
+						easeOutElastic: {
+							label: easeOutElastic
+						},
+						easeOutBack: {
+							label: easeOutBack
+						}
+					}
+				Footer: section
+				#################
+				footer_text:
+					label: Footer text
+					type: wysiwyg
+					default: '&copy; 2012 Copyright by <a href="http://www.ait-themes.com">AIT-Themes</a>. All rights reserved.'
+					help: 'This text will be displayed in the footer of page'
+				Google Codes: section
+				#################
+				ga_code:
+					label: Google Analytics Tracking Code
+					type: text
+				CSS3 Features: section
+				#################
+				enableCSSFeatures:
+					label: Enable Features
+					type: checkbox
+					default:
+						enable:
+							label: 'Yes'
+							checked: true
+		globals:
+			title: Global settings
+			tab-title: Layout
+			options:
+				Global sections order: section
+				#######################
+				sectionsOrder:
+					type: order
+					meta: '_ait_sections_order'
+					type: order
+					default:
+						sectionB: Section B - Testimonials
+						sectionC: Section C - Products
+						sectionA: Section A - Content
+				Testimonials - Global Settings : section
+				#################
+				showTestimonials:
+					label: Show Testimonials
+					type: radio
+					default:
+						true:
+							label: 'Yes'
+							checked: true
+						false:
+							label: 'No'
+				Products - Global Settings : section
+				#################
+				globalProduct:
+					label: Show Products Category
+					type: dropdown-categories
+					default: 'product'
+		testimonials:
+			title: Testimonials Settings
+			tab-title: Testimonials
+			options:
+				Testimonials Look & feel: section
+				################################
+				text:
+					label: Testimonials Text
+					type: textarea
+				bgColor:
+					label: Background Color
+					type: colorpicker
+					default: "#ffffff"
+				color:
+					label: Text Color
+					type: colorpicker
+					default: "#333333"
+				linkColor:
+					label: Testimonial Link Color
+					type: colorpicker
+					default: "#0695a6"
+
+		header:
+			title:     Header Setting
+			tab-title: Header
+			options:
+				Header - Appearances : section
+				#################
+				headerBgColor:
+					label: Background Color
+					type: colorpicker
+					default: '#FFFFFF'
+					themebox: { label: Header Background, page: all }
+				headerBg:
+					label: Background Image
+					type: image-url
+					themebox: {
+						label: Header Background,
+						page: all,
+						{title: Floral, img: design/img/patterns/floral.png, repeat: repeat, x: left, y: top, attach: scroll}
+						{title: Sand, img: design/img/patterns/sand.png, repeat: repeat, x: left, y: top, attach: scroll}
+						{title: Wood, img: design/img/patterns/wood.png, repeat: repeat, x: left, y: top, attach: scroll}
+					}
+				headerBgY:
+					label: Vertical Position
+					type: select
+					default: {
+						top: {
+							label: Top
+							checked: true
+						},
+						center: {
+							label: Center
+						},
+						bottom: {
+							label: Bottom
+						}
+					}
+				headerBgX:
+					label: Horizontal Position
+					type: select
+					default: {
+						left: {
+							label: Left
+							checked: true
+						},
+						center: {
+							label: Center
+						},
+						right: {
+							label: Right
+						}
+					}
+				headerBgRepeat:
+					label: Repeat
+					type: select
+					default: {
+						no-repeat: {
+							label: No Repeat
+						},
+						repeat: {
+							label: Repeat
+							checked: true
+						},
+						repeat-x: {
+							label: Repeat X
+						},
+						repeat-y: {
+							label: Repeat Y
+						}
+					}
+				Header - Slider : section
+				#################
+				sliderEnable:
+					label: Enable slider
+					type: select
+					default: {
+						'yes': {
+							label: 'Yes'
+							checked: true
+						},
+						'no': {
+							label: 'No'
+						}
+					}
+				sliderType:
+					label: Slider type
+					type: dropdown-sliders
+					default: anything
+				sliderAliases:
+					label: Slider aliases
+					type: dropdown-slider-aliases
+				sliderAlternative:
+					label: Slider alternative
+					type: image-url
+					default: ''
+				sliderCategory:
+					label: Show Slider Category
+					type: dropdown-categories
+					default: slider-creator
+				sliderAnimTime:
+					label: "Animation Time (ms)"
+					type: text
+					default: 600
+				sliderDelayTime:
+					label: "Delay Time (ms)"
+					type: text
+					default: 3000
+				sliderImageHeight:
+					label: "Max height of images in slider (px)"
+					type: text
+					default: 450
+		footer:
+			title:     Footer Settings
+			tab-title: Footer
+			less: true
+			options:
+				Footer - Widgets : section
+				#################
+				widthFirst:
+					label: "First Widget Width"
+					type: text
+					skinable: true
+					default: 422px
+				widthSecond:
+					label: "Second Widget Width"
+					type: text
+					skinable: true
+					default: 137px
+				widthThird:
+					label: "Third Widget Width"
+					type: text
+					skinable: true
+					default: 127px
+				widthFourth:
+					label: "Fourth Widget Width"
+					type: text
+					skinable: true
+					default: 122px
+				widthFifth:
+					label: "Fifth Widget Width"
+					type: text
+					skinable: true
+					default: 202px
+				widthSixth:
+					label: "Sixth Widget Width"
+					type: text
+					skinable: true
+					default: 202px
+		socialIcons:
+			title: Social icons
+			tab-title: Social icons
+			options:
+				"Icons": section-title
+				displayIcons:
+					label: Display social icons
+					type: checkbox
+					default:
+						display:
+							label: "Yes"
+							checked: true
+				icons:
+#					label: Social Icons
+					label-counter: 'Icon #'
+					type: clone
+					default: [
+						[
+							iconUrl: {
+								label: Icon URL,
+								type: image-url,
+								default: 'design/img/icons/facebook_38.png'
+							},
+							title: {
+								label: Title,
+								type: text,
+								default: 'Facebook'
+							},
+							link: {
+								label: Link,
+								type: text,
+								default: 'http://www.facebook.com/AitThemes'
+							},
+						],
+						[
+							iconUrl: {
+								label: Icon URL,
+								type: image-url,
+								default: 'design/img/icons/youtube_38.png'
+							},
+							title: {
+								label: Title,
+								type: text,
+								default: Whatch us on Youtube.
+							},
+							link: {
+								label: Link,
+								type: text,
+								default: 'http://www.youtube.com/user/AitThemes'
+							},
+						],
+						[
+							iconUrl: {
+								label: Icon URL,
+								type: image-url,
+								default: 'design/img/icons/twitter_38.png'
+							},
+							title: {
+								label: Title,
+								type: text,
+								default: Follow us on Twitter
+							},
+							link: {
+								label: Link,
+								type: text,
+								default: 'http://www.twitter.com/AitThemes'
+							},
+						],
+						[
+							iconUrl: {
+								label: Icon URL,
+								type: image-url,
+								default: 'design/img/icons/flickr_38.png'
+							},
+							title: {
+								label: Title,
+								type: text,
+								default: Flickr...
+							},
+							link: {
+								label: Link,
+								type: text,
+								default: 'http://www.flickr.com'
+							},
+						],
+						[
+							iconUrl: {
+								label: Icon URL,
+								type: image-url,
+								default: 'design/img/icons/rss_38.png'
+							},
+							title: {
+								label: Title,
+								type: text,
+								default: Get the lastest news.
+							},
+							link: {
+								label: Link,
+								type: text,
+								default: 'http://www.ait-themes.com/feed/'
+							},
+						],
+					]
+
+appearance:
+	title:     Appearance Settings
+	menu-title: Appearance
+	tabs:
+		colors:
+			title: Colors & Bacgkrounds
+			tab-title: Colors & Backgrounds
+			less: true
+			options:
+				Website Decoration: section
+				#################
+				themeColor:
+					label: Theme Color
+					type: colorpicker
+					default: "#8fc412"
+					themebox: { label: Theme, page: all }
+				linesColor:
+					label: Lines Color
+					type: colorpicker
+					default: '#d6d6d6'
+					themebox: { label: Lines, page: all }
+				htmlBgColor:
+					label: Background Color
+					type: colorpicker
+					default: '#ededed'
+					themebox: { label: Background, page: all }
+				htmlBg:
+					label: Background Image
+					type: image-url
+					default: 'design/img/patterns/grain.png'
+					themebox: {
+						label: Website Background,
+						page: all,
+						{title: Grain, img: design/img/patterns/grain.png, repeat: repeat, x: left, y: top, attach: scroll}
+						{title: Floral, img: design/img/patterns/floral.png, 						repeat: repeat, x: left, y: top, attach: scroll}
+						{title: Sand, img: design/img/patterns/sand.png, 							repeat: repeat, x: left, y: top, attach: scroll}
+						{title: Wood, img: design/img/patterns/wood.png, 							repeat: repeat, x: left, y: top, attach: scroll}
+						{title: Background Bubbles, img: design/img/patterns/bubbles.jpg, 			color: '#86d4e1', repeat: no-repeat, x: center, y: top, attach: fixed}
+						{title: Background Gold-Rock, img: design/img/patterns/gold-rock.jpg, 		color: '#dac02b', repeat: repeat-x, x: center, y: top, attach: fixed}
+						{title: Background Green-Lights, img: design/img/patterns/green-lights.jpg, color: '#d1f9a1', repeat: repeat-x, x: center, y: top, attach: scroll}
+					}
+				htmlBgY:
+					label: Vertical Position
+					type: select
+					default: {
+						top: {
+							label: Top
+							checked: true
+						},
+						center: {
+							label: Center
+						},
+						bottom: {
+							label: Bottom
+						}
+					}
+				htmlBgX:
+					label: Horizontal Position
+					type: select
+					default: {
+						left: {
+							label: Left
+						},
+						center: {
+							label: Center
+							checked: true
+						},
+						right: {
+							label: Right
+						}
+					}
+				htmlBgRepeat:
+					label: Repeat
+					type: select
+					default: {
+						no-repeat: {
+							label: No Repeat
+						},
+						repeat: {
+							label: Repeat
+						},
+						repeat-x: {
+							label: Repeat X
+							checked: true
+						},
+						repeat-y: {
+							label: Repeat Y
+						}
+					}
+				htmlBgAttach:
+					label: Scroll the background?
+					type: radio
+					themebox: {page: all}
+					default:
+						scroll:
+							label: 'Yes'
+							checked: true
+						fixed:
+							label: 'No'
+
+		fonts:
+			title:     Fonts
+			tab-title: Fonts
+			less: true
+			options:
+				Font family for titles and menu: section
+				####################
+				fancyFont:
+					label: Titles and Menu Font
+					type: font
+					default: Swis721 Cn BT
+					themebox: {label: Titles & Menu font, page: all}
+				Font colors: section
+				#################
+				generalFontColor:
+					label:  General Text Color
+					type: colorpicker
+					default: '#777777'
+					themebox: {label: General Font Color, page: all}
+				menusFontColor:
+					label: Menu Font Color
+					type: colorpicker
+					default: '#ffffff'
+					themebox: {label: Menu Font, page: all}
+				titlesFontColor:
+					label:  Titles Font Color
+					type: colorpicker
+					default: '#333333'
+					themebox: {label: Titles Font, page: all}
+				decorFontColor:
+					label:  Decorations Font Color
+					type: colorpicker
+					default: '#0695a6'
+					themebox: {label: Decorations, page: all}
+				linksFontColor:
+					label: Links Font Color
+					type: colorpicker
+					default: '#0695a6'
+					themebox: {label: Links Font, page: all}
+				footerTextFontColor:
+					label: Footer Text Color
+					type: colorpicker
+					default: '#ffffff'
+					themebox: {label: Footer Text, page: all}
+				footerTitlesFontColor:
+					label: Footer Titles Color
+					type: colorpicker
+					default: '#ffffff'
+					themebox: {label: Footer Titles, page: all}
+				footerDecorFontColor:
+					label:  Footer Decorations Font Color
+					type: colorpicker
+					default: '#ffffff'
+					themebox: {label: Footer Decor, page: all}
+				footerLinksFontColor:
+					label: Footer Links Color
+					type: colorpicker
+					default: '#ffffff'
+					themebox: {label: Footer Links, page: all}
+				pageFooterTextColor:
+					label: Page Footer Text Color
+					type: colorpicker
+					default: '#ffffff'
+					#themebox: {label: Page Ft.Text, page: all}
+				pageFooterLinksColor:
+					label: Page Footer Links Color
+					type: colorpicker
+					default: '#ffffff'
+					#themebox: {label: Page Ft.Links, page: all}
+		customCss:
+			title: Custom CSS
+			tab-title: Custom CSS
+			options:
+				Your custom CSS: section
+				########################
+				customCss:
+					type: custom-css
+					default: '/* your custom CSS in LESS syntax */'
+				LESS variables for images: section
+				########################
+				customImages:
+					type: custom-css-vars
+					default: [
+						[
+							variable: {
+								label: Image name
+								type: text
+							},
+							value: {
+								label: Image
+								type: image-url
+							}
+						]
+
+					]

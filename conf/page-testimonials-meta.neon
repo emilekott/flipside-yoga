@@ -1,0 +1,29 @@
+overrideGlobal:
+	label: Use these settings
+	type: checkbox
+	default:
+		'yes':
+			label: 'Yes'
+show:
+	label: Show Testimonials on this page?
+	type: radio
+	default:
+		'yes':
+			label: 'Yes'
+		'no':
+			label: 'No'
+text:
+	label: Testimonials
+	type: textarea
+bgColor:
+	label: Background Color
+	type: colorpicker
+	default: "#FFFFFF"
+color:
+	label: Text Color
+	type: colorpicker
+	default: "#000000"
+linkColor:
+	label: Testimonial Link Color
+	type: colorpicker
+	default: "#FFFFFF"

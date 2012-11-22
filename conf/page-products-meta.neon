@@ -1,0 +1,10 @@
+overrideGlobal:
+	label: Use these settings
+	type: checkbox
+	default:
+		'yes':
+			label: 'Yes'
+category:
+	label: Products Category
+	type: dropdown-categories
+	default: product
