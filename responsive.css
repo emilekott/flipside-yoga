@@ -59,7 +59,7 @@
 	#sections, #section-container,
 	.widgets, #footer	{width: 480px;}
 	
-	#header {background: rgba(255,255,255,0.7);}
+	#header {background: #231F20;}
 	    #header .logo {clear: both; float: none; padding: 20px 0;}
 	    	#header .logo a img {
 				display: block;
